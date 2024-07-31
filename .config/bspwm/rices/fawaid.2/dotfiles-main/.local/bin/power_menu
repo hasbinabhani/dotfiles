@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Define the options for the Rofi menu
+options="Power Off\0icon\x1f<span color='#45475A'>⏻</span>
+Reboot\0icon\x1f<span color='#45475A'></span>
+Logout\0icon\x1f<span color='#45475A'></span>"
+
+# Use Rofi to display the menu and get the user's choice
+choice=$(echo -en "$options" | rofi -dmenu -theme power-menu)
+
+echo $choice
+# Perform the selected action based on the user's choice 
+case "$choice" in
+    "Power Off")
+        poweroff
+        ;;
+    "Reboot")
+        reboot
+        ;;
+    "Logout")
+        bspc quit
+        ;;
+    *)
+        echo "Invalid choice"
+        ;;
+esac
+
