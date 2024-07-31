@@ -1,8 +1,8 @@
-# dotfiles
+#Dotfiles/bspwm
+
 
 Bahan pembelajaran pribadi.
 
 WM= BSPWM
 
-referensi= https://github.com/gh0stzk/dotfiles.git 
-
+referensi= https://github.com/gh-1stzk/dotfiles.git
