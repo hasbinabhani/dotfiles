@@ -1,0 +1,13 @@
+// Rofi colors for Yael
+
+* {
+    font: "JetBrainsMono NF Bold 9";
+    background: #0d1318;
+    background-alt: #0d1318E0;
+    foreground: #ccd2d9;
+    selected: #8999AD;
+    active: #728BA2;
+    urgent: #5B758C;
+
+    img-background: url("~/.config/bspwm/rices/mahda/rofi.webp", width);
+}
